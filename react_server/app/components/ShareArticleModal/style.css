@@ -1,0 +1,156 @@
+.share-article-modal {
+  width: 700px !important;
+}
+
+.share-article-modal .ant-modal-footer {
+  border-top: 0px;
+}
+
+.share-article-modal-close {
+  background: blue;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+}
+
+.share-post-card {
+  height: 100px;
+  background-color: #d2d2d2;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.share-post-card .share-post-avatar {
+  width: 80px;
+  height: 80px;
+}
+
+.share-post-card .share-post-avatar img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.share-post-card .share-post-content {
+  width: calc(100% - 90px);
+  margin-left: 90px;
+}
+
+.selected-article-row
+{
+  margin-top: 15px;
+}
+.selected-article-row>div:first-child {
+  font-size: 1.3em;
+  line-height: 5.5em;
+}
+
+.selected-article-row>div:nth-child(2) {
+  width: calc(100% - 150px);
+  margin-left: 10px;
+}
+
+.selected-article-row .share-post-title {
+  font-size: 1.5em;
+}
+
+.selected-article-row .share-post-author {
+  font-size: 2.5em;
+}
+
+.share-post-title {
+  display: block;
+  display: -webkit-box;
+  max-width: 100%;
+  height: 2em;
+  font-size: 1.0em;
+  line-height: 1;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bolder;
+  margin-top: 5px;
+}
+
+.share-post-info {
+  margin-top: 5px;
+}
+
+.share-post-info .share-post-author {
+  font-size: 1em;
+}
+
+.share-post-info .share-post-time {
+  font-size: 1em;
+}
+
+.share-post-info .share-post-views {
+  font-size: .9em;
+  font-weight: 200;
+}
+
+.share-post-comment {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 200px !important;
+}
+
+.share-post-comment-check {
+  width: 25px;
+}
+
+.share-post-button {
+  width: 200px;
+  margin: 10px 20px;
+}
+
+.share-post-comment-help {
+  width: 20px;
+  height: 20px;
+  background-color: #e2e2e2;
+  color: white;
+  border-radius: 50%;
+  margin-left: 5px;
+  text-align: center;
+}
+
+.share-post-comment-help:hover {
+  cursor: pointer;
+  background-color: #d2d2d2;
+}
+
+.share-article-modal .ant-modal-footer {
+  height: 0;
+  padding: 0;
+}
+
+.share-article-modal-footer {
+  margin-top: 10px;
+}
+
+.recommended-groups {
+  text-align: center;
+}
+
+.recommended-groups-title,
+.recommended-groups-more {
+  font-size: 1em;
+  font-weight: bold;
+  color: black;
+}
+
+.recommended-groups-more {
+  cursor: pointer;
+}
+
+.recommended-group {
+  width: 250px;
+  margin: 5px;
+}
+
+.selected-groups-done-button {
+  margin-top: 15px;
+  padding: 5px 50px;
+}

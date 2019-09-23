@@ -1,0 +1,111 @@
+.header {
+  top: 0;
+  background: white;
+  box-shadow: 2px 2px 2px #D3D3D3;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  min-width: 650px;
+}
+
+.group-button {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  background-image: url('../../images/group.png');
+  background-size: 100% 100%;
+  margin-left: auto;
+}
+
+.group-button:hover {
+  background-image: url('../../images/group-active.png');
+}
+
+.notification-icon {
+  font-size: 30px;
+  cursor: pointer;
+}
+.notification-row{
+  cursor: pointer;
+}
+.notification-row:hover {
+  background-color: #f2f2f2;
+}
+
+.ant-badge p {
+  color: white;
+}
+
+.notification-icon:hover {
+  color: #1890ff;
+}
+
+.notification-item {
+  color: inherit;
+}
+
+.notification-item:hover {
+  color: black;
+}
+
+.notification-item div {
+ 
+}
+
+.header-user {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.header-user-img {
+  width: 37px;
+  height: 36px;
+  margin-top: -29px;
+  border-radius: 9px;
+}
+
+.header-user:hover {
+  border: 1.5px solid #1890ff;
+}
+
+.trending-menu {
+  width: 200px;
+  overflow: hidden;
+  white-space: initial;
+}
+
+.global-search-wrapper {
+  padding-right: 50px;
+}
+
+.global-search {
+  width: 100%;
+}
+
+.global-search.ant-select-auto-complete .ant-select-selection--single {
+  margin-right: -46px;
+}
+
+.global-search.ant-select-auto-complete .ant-input-affix-wrapper .ant-input:not(:last-child) {
+  padding-right: 62px;
+}
+
+.global-search.ant-select-auto-complete .ant-input-affix-wrapper .ant-input-suffix button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.global-search-item {
+  display: flex;
+}
+
+.global-search-item-desc {
+  flex: auto;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.global-search-item-count {
+  flex: none;
+}

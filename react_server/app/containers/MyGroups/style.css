@@ -1,0 +1,35 @@
+/**/
+
+.container {
+  margin-top: 90px;
+}
+
+.left-panel {
+  border-top: solid black 2px;
+  margin: 20px;
+  min-width: 500px;
+}
+
+@media only screen and (min-width:1200px) {
+  .group-panel {
+    width: 33.333%;
+    left: 66.666%;
+    position: relative;
+  }
+
+  .commentary-panel {
+    width: 66.666%;
+    right: 33.333%;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width:1200px) {
+  .group-panel {
+    width: 100%;
+  }
+
+  .commentary-panel {
+    width: 100%;
+  }
+}

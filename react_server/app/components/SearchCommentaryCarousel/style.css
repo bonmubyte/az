@@ -1,0 +1,17 @@
+.search-commentary {
+  margin-top: 5px;
+  border-radius: 10px;
+}
+.search-commentary:hover{
+  background-color: #fafafa;
+  cursor: pointer;
+}
+.search-commentary-post {
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: #e2e2e2;
+}
+
+.search-commentary-post:hover {
+  background-color: #eaeaea;
+}

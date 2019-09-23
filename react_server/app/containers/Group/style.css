@@ -1,0 +1,140 @@
+/**/
+.container {
+  margin-top: 90px;
+  min-width: 600px;
+}
+
+.current-group {
+  display: flex;
+  border: 1px solid #909090;
+  border-radius: 20px;
+  padding: 20px;
+  min-width: 500px;
+  box-shadow: 1px 1px 2px grey;
+  margin: 5px 30px;
+  width: calc(100% - 60px);
+}
+
+.current-group-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+}
+
+.current-group-avatar-new {
+  width: 100px;
+  height: 60px;
+  border-radius: 10px;
+  margin-top: -15px;
+}
+
+.current-group-avatar-new img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+.current-group-avatar-new button {
+  font-size: 10px;
+}
+
+.current-group-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.current-group-content {
+  margin-left: 20px;
+}
+
+.current-group-name {
+  font-size: 30px;
+  color: black;
+  font-weight: bolder;
+}
+
+.current-group-info {
+  font-size: 15px;
+}
+
+.current-group-button {
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+  margin: 10px 10px 0 30px;
+  cursor: pointer;
+}
+
+.select-article-panel {
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 2px 2px 2px #e2e2e2;
+}
+
+.select-article-panel-heading div {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: blue;
+  margin-right: 10px;
+}
+
+.select-article-panel-heading+div {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.select-article-panel-heading span {
+  font-weight: bold;
+  color: black;
+  line-height: 30px;
+}
+
+.select-article-panel-content .post-card {
+  margin: 10px;
+}
+
+.select-article-panel-heading {
+  margin-bottom: 20px;
+}
+
+.select-article-panel-footer {
+  margin-top: 20px;
+}
+
+.select-article-button {
+  padding: 0 40px;
+  border-radius: 20px;
+}
+
+.select-article-comment {
+  width: calc(100% - 50px);
+  border-radius: 10px;
+}
+
+.posts-panel {
+  margin: 5px 20px;
+  min-width: 500px;
+}
+
+
+.current-group-detail {
+  border-radius: 20px;
+  border: 1px solid gray;
+  padding: 20px;
+  margin: 10px 25px;
+}
+
+.current-group-heading {
+  font-size: 1.5em;
+}
+
+.current-group-detail-name {
+  font-weight: bolder;
+}

@@ -1,0 +1,118 @@
+.feed-card {
+  border-radius: 15px;
+  border: solid 1px gray;
+  padding: 20px;
+  font-size: 20px;
+  margin: 10px;
+  box-shadow: 1px 1px 1px gray;
+}
+
+.feed-card:hover {
+  background-color: #f9f9f9;
+}
+
+.feed-card .feed-user-avatar {
+  border: 1px solid black;
+}
+
+.feed-card .feed-user {
+  line-height: 1.7em;
+}
+
+.feed-group {
+  margin-left: auto;
+  font-size: .8em;
+  display: flex;
+}
+
+.feed-group a {
+  color: inherit;
+}
+.feed-user a {
+  color: inherit;
+}
+.feed-user-name{
+  font-weight: bold;
+}
+.feed-group .group-name {
+  font-weight: bold;
+}
+
+.feed-comment {
+  display: block;
+  word-wrap: break-word;
+  /* display: -webkit-box;
+  max-width: 100%;
+  height: 2em;
+  margin: 0 auto;
+  font-size: 1.0em;
+  /* line-height: 1;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+  margin: 0.7em;
+}
+
+.post-card {
+  cursor: pointer;
+  height: 100px;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.post-card:hover {
+  background-color: #e2e2e2;
+
+}
+
+.post-card .post-avatar {
+  width: 80px;
+  height: 80px;
+}
+
+.post-card .post-avatar img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.post-card .post-content {
+  width: calc(100% - 90px);
+  margin-left: 90px;
+}
+
+
+.post-title {
+  display: block;
+  display: -webkit-box;
+  max-width: 100%;
+  height: 2em;
+  font-size: 1.0em;
+  line-height: 1;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bolder;
+  margin-top: 5px;
+}
+
+.post-info {
+  margin-top: 5px;
+}
+
+.post-info .post-author {
+  font-size: .9em;
+}
+
+.post-info .post-time {
+  font-size: .7em;
+}
+
+.post-info .post-views {
+  font-size: .7em;
+  font-weight: 400;
+}

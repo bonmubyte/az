@@ -1,0 +1,117 @@
+/* headlines with lines */
+.decorated {
+  overflow: hidden;
+  text-align: center;
+}
+
+.decorated>span {
+  position: relative;
+  display: inline-block;
+}
+
+.decorated>span:before,
+.decorated>span:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  border-bottom: 2px solid;
+  width: 591px;
+  /* half of limiter*/
+  margin: 0 20px;
+}
+
+.decorated>span:before {
+  right: 100%;
+}
+
+.decorated>span:after {
+  left: 100%;
+}
+
+div.container {
+  margin-top: 45px;
+}
+
+.top-side-post-heading {
+  margin-top: 10px;
+  width: 210px;
+  white-space: nowrap;
+  overflow: hidden;
+  white-space: initial;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #4C4E4D;
+  line-height: normal;
+}
+
+.top-side-post-description {
+  width: 240px;
+  white-space: nowrap;
+  overflow: hidden;
+  white-space: initial;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666666;
+}
+
+.bottom-side-post-heading {
+  width: 210px;
+  white-space: nowrap;
+  overflow: hidden;
+  white-space: initial;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #4C4E4D;
+  font-size: 16px;
+  line-height: normal;
+}
+
+.bottom-side-post-description {
+  width: 240px;
+  white-space: nowrap;
+  overflow: hidden;
+  white-space: initial;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666666;
+}
+
+.top-middle-post-heading {
+  white-space: nowrap;
+  overflow: hidden;
+  white-space: initial;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #4C4E4D;
+  line-height: normal;
+  font-size: 30px;
+}
+
+.top-middle-post-description {
+  white-space: nowrap;
+  overflow: hidden;
+  white-space: initial;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666666;
+  font-size: 17px;
+}
+
+.bottom-middle-post-heading {
+  width: 327px;
+  white-space: nowrap;
+  overflow: hidden;
+  white-space: initial;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 'bold';
+  color: #4C4E4D;
+  line-height: normal;
+  font-size: 18px;
+}
+
+.bottom-middle-post-description {
+  width: 327px;
+    white-space: nowrap;
+    overflow: hidden;
+    white-space: initial;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666666;
+    font-size: 17px;
+}

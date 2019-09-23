@@ -1,0 +1,15 @@
+.invite-modal{
+  border-radius: 20px;
+  border:1 px solid gray;
+  width: 700px!important;
+}
+.invite-modal-row{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.invite-heading{
+  text-align: center;
+  font-size: 2.4em;
+}
