@@ -1542,7 +1542,7 @@ export class ViewNews extends React.Component {
 
 								<Col offset={1} xs={24} sm={24} md={10} lg={10} xl={10}>
 									<div className="reaction-sidebar">
-										<h1 style={{ textAlign: 'left' }}>People</h1>
+										<h1 style={{ textAlign: 'left' }}>Keywords</h1>
 										<Row className="custom-row">
 											<Col className="custom-col" span={20}>
 												{response &&
@@ -1882,7 +1882,7 @@ export class ViewNews extends React.Component {
 										</Row>
 										<Row>
 											{result && result.title.length > 0 ? (
-												<h1 style={{ textAlign: 'left' }}>Upper Recommentaion</h1>
+												<h1 style={{ textAlign: 'left' }}>Timeline</h1>
 											) : null}
 
 											<div style={{ marginLeft: '2%', marginTop: '2%' }}>

@@ -191,8 +191,8 @@ export class AddNews extends React.Component {
                 <Row>
                   <Col offset={3} span={20}>
                     <Tabs defaultActiveKey="1">
-                      <TabPane tab="Manual" key="1" />
-                      <TabPane tab="Resource" key="2">
+                      <TabPane tab="Publish Manually" key="1" />
+                      <TabPane tab="Publish Existing Article" key="2">
                         <Form
                           onSubmit={this.handleSubmitResource}
                           hideRequiredMark={false}
@@ -278,7 +278,7 @@ export class AddNews extends React.Component {
                             <Col offset={4}>
                               <FormItem>
                                 <Button type="primary" htmlType="submit">
-                                  Add Resource
+                                  Process URL/File
                                 </Button>
                               </FormItem>
                             </Col>
@@ -386,7 +386,7 @@ export class AddNews extends React.Component {
                           />,
                         )}
                       </FormItem>
-                      <FormItem label="Source" {...formItemLayout}>
+                      <FormItem label="Source URL" {...formItemLayout}>
                         {getFieldDecorator('source', {
                           rules: [
                             {
@@ -404,7 +404,7 @@ export class AddNews extends React.Component {
                         )}
                       </FormItem>
 
-                      <FormItem label="Place in frontpage?" {...formItemLayout}>
+                      <FormItem label="Select Your Main Sentence" {...formItemLayout}>
                         {/* {getFieldDecorator('Place in frontpage?', { */}
                         {getFieldDecorator('main_sentence_number', {})(
                           <RadioGroup
@@ -499,7 +499,7 @@ export class AddNews extends React.Component {
                           />,
                         )}
                       </FormItem>
-                      <FormItem label="People" {...formItemLayout}>
+                      <FormItem label="Keyword 1" {...formItemLayout}>
                         {getFieldDecorator('people1', {
                           rules: [
                             {
@@ -517,7 +517,7 @@ export class AddNews extends React.Component {
                           />,
                         )}
                       </FormItem>
-                      <FormItem label="People" {...formItemLayout}>
+                      <FormItem label="Keyword 2" {...formItemLayout}>
                         {getFieldDecorator('people2', {
                           rules: [
                             {
@@ -535,7 +535,7 @@ export class AddNews extends React.Component {
                           />,
                         )}
                       </FormItem>
-                      <FormItem label="People" {...formItemLayout}>
+                      <FormItem label="Keyword 3" {...formItemLayout}>
                         {getFieldDecorator('people3', {
                           rules: [
                             {
@@ -553,7 +553,7 @@ export class AddNews extends React.Component {
                           />,
                         )}
                       </FormItem>
-                      <FormItem label="People" {...formItemLayout}>
+                      <FormItem label="Keyword 4" {...formItemLayout}>
                         {getFieldDecorator('people4', {
                           rules: [
                             {
@@ -571,7 +571,7 @@ export class AddNews extends React.Component {
                           />,
                         )}
                       </FormItem>
-                      <FormItem label="Embedded image" {...formItemLayout}>
+                      <FormItem label="Card News" {...formItemLayout}>
                         {getFieldDecorator('embedded_image', {})(
                           <div>
                             <input
