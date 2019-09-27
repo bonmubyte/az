@@ -698,7 +698,7 @@ export class NewsPage extends React.Component {
 		return (
 			<div>
 				<Helmet>
-					<title>NewsPage</title>
+					<title>Profile Page</title>
 					<meta name="description" content="Description of NewsPage" />
 				</Helmet>
           <Header history={this.props.history} first_mode = {!this.state.show_articles_first}/>
@@ -710,6 +710,7 @@ export class NewsPage extends React.Component {
 								md={{ offset: 3, span: 14 }}
 								sm={{ offset: 1, span: 16 }}
 								xs={{ offset: 1, span: 16 }}
+								style ={{fontFamily: 'Techna Sans'}}
 							>
 								{this.state.result ? (
 									<Row>
@@ -719,17 +720,17 @@ export class NewsPage extends React.Component {
 													backgroundColor: 'purple',
 													color: 'white',
 													borderRadius: 10,
-													width: 150,
+													width: 100,
 													lineHeight: '2em',
 													height: 30,
 													textAlign: 'center'
 												}}
 											>
-												NewsRoom
+												Journalist
 											</div>
 										) : null}
 
-										<Col xs={10} sm={10} md={10} lg={10} style={{ display: 'flex' }}>
+										<Col xs={10} sm={10} md={10} lg={10} style={{ display: 'flex', fontFamily: 'Techna Sans'  }}>
 											<h2
 												style={{
 													width: 150,
@@ -749,14 +750,14 @@ export class NewsPage extends React.Component {
 											{this.state.result.visitor_profile_info.is_verified &&
 											this.state.currentUser != this.state.otherId ? (
 												<Icon
-													style={{ marginTop: 5, color: '#FF9400', fontSize: '20px' }}
-													type="check-square"
+													style={{ marginTop: 5, color: '#9e419b', fontSize: '20px' }}
+													type="safety"
 												/>
 											) : null}
 											{this.state.verified && this.state.currentUser == this.state.otherId ? (
 												<Icon
-													style={{ marginTop: 5, color: '#FF9400', fontSize: '20px' }}
-													type="check-square"
+													style={{ marginTop: 5, color: '#9e419b', fontSize: '20px' }}
+													type="safety"
 												/>
 											) : null}
 										</Col>
@@ -766,7 +767,7 @@ export class NewsPage extends React.Component {
 												<Row type="flex">
 													<Col>
 														<Button
-															style={{ marginLeft: 15 }}
+															style={{ marginLeft: 15, color: '#9e419b'}}
 															ghost
 															type="primary"
 															onClick={this.showProfileModal}
@@ -993,7 +994,7 @@ export class NewsPage extends React.Component {
 							<Col xs={24} sm={24} md={24} lg={8}>
 								{this.state.result ? (
 									<Card style={{ textAlign: 'center', marginTop: '10%' }}>
-										<h3>Following Profile</h3>
+										<h3 style ={{fontFamily: 'Techna Sans'}}>Following Profile</h3>
 										<br />
 										{this.state.currentUser != this.state.otherId &&
 										this.state.result.visitor_profile_info.show_profile_keywords == false ? (
@@ -1188,8 +1189,8 @@ export class NewsPage extends React.Component {
 								) : null}
 
 								{this.state.result ? (
-									<Card style={{ textAlign: 'center', marginTop: '5%' }}>
-										<h3>Following Keyword</h3>
+									<Card style={{ textAlign: 'center', marginTop: '5%'}}>
+										<h3 style = {{fontFamily: 'Techna Sans' }}>Following Keyword</h3>
 										<br />
 										{this.state.currentUser != this.state.otherId &&
 										this.state.result.visitor_profile_info.show_profile_keywords == false ? (
@@ -1267,7 +1268,7 @@ export class NewsPage extends React.Component {
 									</Card>
 								) : null}
 								<Card style={{ marginTop: 30 }}>
-									<h3 style={{ textAlign: 'center' }}>My Groups</h3>
+									<h3 style={{ textAlign: 'center', fontFamily: 'Techna Sans'}}>My Groups</h3>
 									{/* <Row style={{ textAlign: 'center', fontSize: '2em' }}>My Groups</Row> */}
 									<Row>
 										{this.state.myGroups.map((group, index) => {

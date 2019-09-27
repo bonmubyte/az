@@ -1344,10 +1344,10 @@ export class ViewNews extends React.Component {
 							<Row>
 								<Col xs={14} sm={14} md={15} lg={16}>
 									<Row>
-										<h3 style={{ float: 'left' }}>{post.category}</h3>
+										<h3 style={{ float: 'left', fontFamily: 'Techna Sans' }}>{post.category}</h3>
 									</Row>
 									<Row>
-										<h1 style={{ float: 'left' }}>{post.title}</h1>
+										<h1 style={{ float: 'left', fontFamily: 'Techna Sans', fontStyle: 'bold' }}>{post.title}</h1>
 									</Row>
 									<Row>
 										<h4 style={{ float: 'left', color: '#000000' }}>
@@ -1371,7 +1371,7 @@ export class ViewNews extends React.Component {
 											<div />
 										</Col>
 										<Col
-											span={2}
+											span={1}
 											// offset={1}
 										>
 											<React.Fragment>{this.commentsCount()}</React.Fragment>
@@ -1398,7 +1398,7 @@ export class ViewNews extends React.Component {
 												<Row type="flex">
 													<Col>
 														<a href={`/news-page/${this.state.ownerData.id}`}>
-															<h2>
+															<h2 style = {{fontFamily: 'Techna Sans'}}>
 																{' '}
 																{this.limitText(this.state.ownerData.name, 14)}
 																{}
@@ -1410,10 +1410,10 @@ export class ViewNews extends React.Component {
 															<Icon
 																style={{
 																	marginTop: 5,
-																	color: '#FF9400',
+																	color: '#9e419b',
 																	fontSize: '20px'
 																}}
-																type="check-square"
+																type="safety"
 															/>
 														) : null}
 													</Col>
@@ -1424,10 +1424,11 @@ export class ViewNews extends React.Component {
 														{this.state.currentUser != this.state.ownerData.id ? (
 															<Button
 																style={{
-																	backgroundColor: '#FF9400',
+																	backgroundColor: '#9e419b',
 																	width: 120,
 																	height: 20,
-																	color: 'white'
+																	color: 'white',
+																	fontFamily: 'Techna Sans'
 																}}
 																onClick={() => this.followUser()}
 															>
@@ -1448,7 +1449,8 @@ export class ViewNews extends React.Component {
 																	backgroundColor: 'grey',
 																	height: 25,
 																	width: 122,
-																	color: 'white'
+																	color: 'white',
+																	fontFamily: 'Techna Sans'
 																}}
 															>
 																More Articles
@@ -1531,18 +1533,18 @@ export class ViewNews extends React.Component {
 									</Col>
 								) : (
 									<Col xs={24} sm={24} md={13} lg={13} xl={13}>
-										<h2 className="main-heading">CardNews</h2>
+										<h1 style = {{fontFamily: 'Techna Sans'}} className="main-heading">Card News</h1>
 										{post.embedded_image ? (
-											<img style={{ height: '40%', width: '70%' }} src={post.embedded_image} />
+											<img style={{ height: '80%', width: '80%' }} src={post.embedded_image} />
 										) : (
-											<img src={alter} alt="" style={{ height: '40%', width: '70%' }} />
+											<img src={alter} alt="" style={{ height: '80%', width: '80%' }} />
 										)}
 									</Col>
 								)}
 
 								<Col offset={1} xs={24} sm={24} md={10} lg={10} xl={10}>
 									<div className="reaction-sidebar">
-										<h1 style={{ textAlign: 'left' }}>Keywords</h1>
+										<h1 style={{ textAlign: 'left', fontFamily: 'Techna Sans' }}>Keywords</h1>
 										<Row className="custom-row">
 											<Col className="custom-col" span={20}>
 												{response &&
@@ -1882,7 +1884,7 @@ export class ViewNews extends React.Component {
 										</Row>
 										<Row>
 											{result && result.title.length > 0 ? (
-												<h1 style={{ textAlign: 'left' }}>Timeline</h1>
+												<h1 style={{ textAlign: 'left', fontFamily: 'Techna Sans'}}>Timeline</h1>
 											) : null}
 
 											<div style={{ marginLeft: '2%', marginTop: '2%' }}>
@@ -2163,7 +2165,7 @@ export class ViewNews extends React.Component {
 								)}
 							</Row>
 
-							<h2 id="comments" className="comment">
+							<h2 id="comments" className="comment" style = {{fontFamily: 'Techna Sans'}}>
 								Comment Section
 							</h2>
 							<Row>

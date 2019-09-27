@@ -9,12 +9,12 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica;
     skype bhi kh
   }
 
   body.fontLoaded {
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica;
   }
 
   #app {
@@ -43,12 +43,12 @@ const GlobalStyle = createGlobalStyle`
     border-color:red;
   }
   .primary-btn{
-    background:#40a9ff;
-    color:white;
+    background:#9e419b;
+    color:#9e419b;
     margin-top:20px;
     padding:6px 12px;
     border-radius: 4px;
-    border-color:red;
+    border-color:#9e419b;
     :hover{
       color: white
     }

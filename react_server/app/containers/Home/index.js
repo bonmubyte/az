@@ -262,7 +262,7 @@ export class Home extends React.Component {
 							onClick={() => this.showModalStories(index, id)}
 							type="primary"
 						>
-							Share
+							Take
 						</Button>
 						<ShareArticleModal
 							commentId={-1}
@@ -764,7 +764,7 @@ export class Home extends React.Component {
 					<Content className="content">
 						<div className={'container'}>
 							<Row>
-								<Divider><h2 style={{color: '#9e419b'}}>
+								<Divider><h2 style= {{fontFamily: 'Techna Sans', color: '#9e419b'}}>
 									<strong>Front Page</strong></h2></Divider>
 							</Row>
 							<Row type="flex" justify="center">
@@ -777,8 +777,9 @@ export class Home extends React.Component {
 									<Tabs
 										defaultActiveKey="1" // onChange={() => this.filter('Entertainment')}
 										onChange={this.filter}
+										style={{color:'#9e419b'}}
 									>
-										<TabPane tab="Society" key="Economy" >
+										<TabPane tab="Society" key="Economy" style={{color: '#9e419b'}}>
 											{this.state.postData ? this.postsData(this.state.postData) : null}
 										</TabPane>
 										<TabPane tab="Culture" key="Politics">
